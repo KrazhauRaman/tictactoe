@@ -1,0 +1,77 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* settings */
+.sizeHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.settingsButtons {
+    display: flex;   
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/* rules */
+.gameRuleBox {
+    position: fixed;
+    top: 1vh;
+    left: 10vw;
+    width: 80vw;
+}
+
+/* field */
+.fieldHtml {
+    display: flex;
+    flex-direction: row;
+}
+
+.fieldRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.tile {
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(138, 196, 138);
+}
+
+.hoveredTile:hover {
+    cursor: pointer;
+    background-color: rgb(210, 248, 192);
+}
+
+/* end game */
+.startAgain {
+    margin-top: 10px;
+}
